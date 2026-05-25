@@ -1,0 +1,131 @@
+:root {
+  --cglf-accent: #10a37f;
+  --cglf-surface: #ffffff;
+  --cglf-surface-muted: #f7f7f8;
+  --cglf-text: #202123;
+  --cglf-text-muted: #6e6e80;
+  --cglf-border: rgba(32, 33, 35, 0.16);
+  --cglf-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+html.dark,
+body.dark,
+[data-theme="dark"] {
+  --cglf-surface: #171717;
+  --cglf-surface-muted: #212121;
+  --cglf-text: #ececf1;
+  --cglf-text-muted: #a8a8b3;
+  --cglf-border: rgba(236, 236, 241, 0.18);
+  --cglf-shadow: 0 8px 24px rgba(0, 0, 0, 0.36);
+}
+
+.cglf-contained-turn {
+  content-visibility: auto !important;
+  contain-intrinsic-size: auto 560px !important;
+}
+
+.cglf-contained-turn[data-cglf-optimize-heavy-blocks="true"] pre,
+.cglf-contained-turn[data-cglf-optimize-heavy-blocks="true"] table,
+.cglf-contained-turn[data-cglf-optimize-heavy-blocks="true"] [class*="markdown"] {
+  content-visibility: auto !important;
+  contain-intrinsic-size: auto 360px !important;
+}
+
+.cglf-parked {
+  position: relative !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  min-height: 78px !important;
+  max-height: 78px !important;
+  margin-block: 10px !important;
+  padding: 12px 96px 12px 14px !important;
+  overflow: hidden !important;
+  border: 1px solid var(--cglf-border) !important;
+  border-radius: 8px !important;
+  background: var(--cglf-surface-muted) !important;
+  color: var(--cglf-text) !important;
+  cursor: pointer !important;
+  contain: layout paint style !important;
+  content-visibility: visible !important;
+}
+
+.cglf-parked:hover {
+  border-color: var(--cglf-accent) !important;
+}
+
+.cglf-parked:focus-visible {
+  outline: 2px solid var(--cglf-accent) !important;
+  outline-offset: 2px !important;
+}
+
+.cglf-parked > * {
+  display: none !important;
+}
+
+.cglf-parked::before {
+  content: attr(data-cglf-role) ": " attr(data-cglf-preview);
+  display: -webkit-box !important;
+  overflow: hidden !important;
+  color: var(--cglf-text) !important;
+  font: 500 13px/1.45 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;
+}
+
+.cglf-parked::after {
+  content: "Expand";
+  position: absolute !important;
+  top: 50% !important;
+  right: 14px !important;
+  transform: translateY(-50%) !important;
+  min-width: 58px !important;
+  padding: 6px 10px !important;
+  border-radius: 6px !important;
+  background: var(--cglf-surface) !important;
+  color: var(--cglf-accent) !important;
+  border: 1px solid var(--cglf-border) !important;
+  font: 600 12px/1 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  text-align: center !important;
+}
+
+.cglf-expanded-once {
+  content-visibility: auto !important;
+  contain-intrinsic-size: auto 560px !important;
+}
+
+.cglf-badge {
+  position: fixed !important;
+  z-index: 2147483647 !important;
+  right: 18px !important;
+  bottom: 18px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  height: 34px !important;
+  padding: 0 11px !important;
+  border: 1px solid var(--cglf-border) !important;
+  border-radius: 999px !important;
+  background: var(--cglf-surface) !important;
+  color: var(--cglf-text) !important;
+  box-shadow: var(--cglf-shadow) !important;
+  font: 600 12px/1 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  user-select: none !important;
+}
+
+.cglf-badge-dot {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 999px !important;
+  background: var(--cglf-accent) !important;
+}
+
+@media (max-width: 640px) {
+  .cglf-parked {
+    padding-right: 78px !important;
+  }
+
+  .cglf-badge {
+    right: 12px !important;
+    bottom: 12px !important;
+  }
+}

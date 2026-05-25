@@ -1,0 +1,19 @@
+{
+  "name": "chatgpt-thread-lite",
+  "version": "0.1.0",
+  "description": "A Manifest V3 extension that reduces long ChatGPT thread lag by parking older conversation turns.",
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/validate.mjs",
+    "demo": "node scripts/serve-demo.mjs",
+    "test:long-thread": "node scripts/test-long-thread.mjs",
+    "test:live-simulated": "node scripts/test-live-simulated-thread.mjs"
+  },
+  "keywords": [
+    "chatgpt",
+    "browser-extension",
+    "performance",
+    "manifest-v3"
+  ],
+  "license": "MIT"
+}

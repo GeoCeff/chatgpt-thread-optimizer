@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatGPT Thread Lite Demo</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="../src/content.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>Thread Lite Demo</h1>
+        <p>A local long-thread fixture that runs the extension content script.</p>
+      </div>
+      <button id="add-turn" type="button">Add turn</button>
+    </header>
+
+    <main class="chat-shell" aria-label="Demo conversation">
+      <section id="conversation" class="conversation"></section>
+    </main>
+
+    <script src="chrome-shim.js"></script>
+    <script src="demo.js"></script>
+    <script src="../src/content.js"></script>
+  </body>
+</html>

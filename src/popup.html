@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatGPT Thread Lite</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header class="header">
+        <div>
+          <h1>Thread Lite</h1>
+          <p id="status">Waiting for ChatGPT</p>
+        </div>
+        <label class="switch" aria-label="Enable Thread Lite">
+          <input id="enabled" type="checkbox">
+          <span></span>
+        </label>
+      </header>
+
+      <section class="control">
+        <label for="keepLastTurns">Keep recent turns live</label>
+        <div class="range-row">
+          <input id="keepLastTurns" type="range" min="2" max="40" step="1">
+          <output id="keepLastTurnsValue"></output>
+        </div>
+      </section>
+
+      <section class="control">
+        <label for="minCharactersToPark">Park turns over characters</label>
+        <div class="range-row">
+          <input id="minCharactersToPark" type="range" min="80" max="1200" step="20">
+          <output id="minCharactersToParkValue"></output>
+        </div>
+      </section>
+
+      <section class="checks">
+        <label>
+          <input id="optimizeHeavyBlocks" type="checkbox">
+          <span>Optimize code and tables</span>
+        </label>
+        <label>
+          <input id="showBadge" type="checkbox">
+          <span>Show parked count</span>
+        </label>
+      </section>
+
+      <footer class="actions">
+        <button id="runNow" type="button">Rescan</button>
+        <button id="expandAll" type="button">Expand all</button>
+      </footer>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
