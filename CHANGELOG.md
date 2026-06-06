@@ -10,3 +10,5 @@
 - Added automated browser simulations for local long-thread behavior.
 - Added live ChatGPT simulated-thread test that verifies the extension on `chatgpt.com` without using account history.
 - Added portfolio case study, testing docs, and contribution guidance.
+
+See [docs/release-notes/v0.1.0.md](docs/release-notes/v0.1.0.md).
