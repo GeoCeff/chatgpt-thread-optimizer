@@ -17,7 +17,7 @@ Useful details include:
 
 ## Security Principles
 
-ChatGPT Thread Lite should:
+ChatGPT Thread Optimizer should:
 
 - Avoid network requests from extension code.
 - Avoid collecting analytics.

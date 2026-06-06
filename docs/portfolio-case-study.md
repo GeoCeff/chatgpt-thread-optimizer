@@ -1,4 +1,4 @@
-# Portfolio Case Study: ChatGPT Thread Lite
+# Portfolio Case Study: ChatGPT Thread Optimizer
 
 ## Problem
 

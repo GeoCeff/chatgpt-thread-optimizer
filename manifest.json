@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "ChatGPT Thread Lite",
+  "name": "ChatGPT Thread Optimizer",
   "description": "Reduce long ChatGPT thread lag by parking older turns and applying browser rendering containment.",
   "version": "0.1.0",
   "permissions": ["storage", "activeTab"],
@@ -20,7 +20,7 @@
     }
   ],
   "action": {
-    "default_title": "ChatGPT Thread Lite",
+    "default_title": "ChatGPT Thread Optimizer",
     "default_popup": "src/popup.html"
   }
 }

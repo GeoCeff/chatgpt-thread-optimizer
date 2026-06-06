@@ -1,5 +1,5 @@
 {
-  "name": "chatgpt-thread-lite",
+  "name": "chatgpt-thread-optimizer",
   "version": "0.1.0",
   "description": "A Manifest V3 extension that reduces long ChatGPT thread lag by parking older conversation turns.",
   "type": "module",

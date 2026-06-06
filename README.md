@@ -1,8 +1,12 @@
-# ChatGPT Thread Lite
+# ChatGPT Thread Optimizer
 
-ChatGPT Thread Lite is a small browser extension that reduces lag in very long ChatGPT conversations by keeping recent turns fully live and parking older, lengthy turns into lightweight placeholders.
+ChatGPT Thread Optimizer is a Manifest V3 browser extension that reduces lag in very long ChatGPT conversations by keeping recent turns fully live and parking older, lengthy turns into lightweight placeholders.
 
 It is designed as a safe client-side mitigation, not a server-side patch. The extension does not alter your account, send chat data anywhere, or delete conversation content. Parked turns expand in-place when clicked.
+
+## Repository Description
+
+Browser extension that reduces long ChatGPT thread lag by parking older turns and keeping recent turns live.
 
 ## Why This Exists
 
@@ -64,12 +68,16 @@ src/
   popup.css
   popup.html
   popup.js
+demo/
+docs/
+scripts/
 ```
 
 ## Documentation
 
 - [Architecture](docs/architecture.md)
 - [Testing](docs/testing.md)
+- [Repository metadata](docs/repository-metadata.md)
 - [Portfolio case study](docs/portfolio-case-study.md)
 - [Contributing](CONTRIBUTING.md)
 - [Security policy](SECURITY.md)

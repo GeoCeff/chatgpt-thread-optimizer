@@ -1,6 +1,6 @@
 # Architecture
 
-ChatGPT Thread Lite is a Manifest V3 browser extension with one content script and one popup.
+ChatGPT Thread Optimizer is a Manifest V3 browser extension with one content script and one popup.
 
 ## Content Script
 
